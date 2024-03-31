@@ -1,0 +1,48 @@
+@font-face {
+ font-family: "MoscowMetro";
+ src: url('../fonts/MoscowMetro.otf') format('opentype'),
+}
+
+body {
+    background-color: rgba(191, 117, 189, 0.2);
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.link-class:hover, .link-class:active {
+    color: black !important;
+    text-decoration: none;
+}
+}
+
+
+
+.welcome {
+    background: linear-gradient(90deg, #8F048C 40%, #BF75BD 50%);
+    color: #49152C;
+    margin: 10px;
+    padding: 30px 50px;
+    font-family: "MoscowMetro",sans-serif;
+    font-size: 40px;
+}
+
+h1{
+background-color: #BF75BD;
+display: block;
+margin: 10px;
+padding: 10px;
+}
+
+p {
+ background-color: rgba(191, 117, 189, 0.5); /* #BF75BD with 90% opacity */
+ display: block;
+ margin: 10px;
+ padding: 10px;
+}
+

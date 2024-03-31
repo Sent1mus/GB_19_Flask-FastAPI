@@ -1,0 +1,13 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+{% for clothes in clothes_list %}
+<div class="clothes">
+    <h1><a class="nav-link active" aria-current="page" href="{{ url_for('clothes_items', items=clothes.title) }}">{{clothes.title}}
+        link</a></h1>
+    <p>{{clothes.description}}</p>
+</div>
+{% endfor %}
+
+{% endblock %}

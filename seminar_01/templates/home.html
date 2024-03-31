@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>
+        {% block title %}
+        "Our Shop Inc."
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="welcome">
+        <a href="/">Welcome to "Our Shop Inc."</a>
+
+    </div>
+    <ul class="nav nav-pills justify-content-end align-items-end">
+        <li class="nav-item"><a href="/clothes/"
+                                class="nav-link"> Clothes </a></li>
+        <li class="nav-item"><a href="/shoes/"
+                                class="nav-link"> Shoes </a></li>
+    </ul>
+
+    {% block content %}
+    <style>
+        .centered-div {
+            text-align: center; /* Center text inside the div */
+            width: 40%; /* Set a width for the div */
+            margin: auto; /* Center the div itself */
+        }
+        .sales-text {
+            font-size: 40px; /* Set the font size to 40 pixels */
+            /* Add any other styles you want for "SALES" here */
+        }
+    </style>
+    <div class="centered-div">
+        <b><span class="sales-text">SALES</span></b><!--TODO-->
+    </div>
+    {% endblock %}
+
+
+    <div class="row fixed-bottom modal-footer">
+        <hr>
+        <p>©2024 Our Shop Inc.<br>
+            All trademarks referenced herein are the properties of their respective owners. &copy;</p>
+    </div>
+</div>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
